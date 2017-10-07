@@ -11,7 +11,6 @@
 		2D796F371866A8624D17DE0F /* Pods_SwiftMailgun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 650B1316D6F6F378BA497090 /* Pods_SwiftMailgun.framework */; };
 		83141B061C8E39CD001429A2 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83141B051C8E39CD001429A2 /* StringExtensions.swift */; };
 		83141B081C8E3D62001429A2 /* MailgunEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83141B071C8E3D62001429A2 /* MailgunEmail.swift */; };
-		832E37951C8E31790094ED36 /* ObjectParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832E37941C8E31790094ED36 /* ObjectParser.swift */; };
 		832E37971C8E31A40094ED36 /* MailgunAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832E37961C8E31A40094ED36 /* MailgunAPI.swift */; };
 		832E379A1C8E31BF0094ED36 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832E37991C8E31BF0094ED36 /* Constants.swift */; };
 		8344DAE71C8698B400F1B181 /* SwiftMailgun.h in Headers */ = {isa = PBXBuildFile; fileRef = 8344DAE61C8698B400F1B181 /* SwiftMailgun.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +22,7 @@
 		838287601C8E728700F5D92D /* MailgunApiSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8382875F1C8E728700F5D92D /* MailgunApiSpecs.swift */; };
 		838287621C8EB2BB00F5D92D /* StringExtensionsSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838287611C8EB2BB00F5D92D /* StringExtensionsSpecs.swift */; };
 		83A8BDD61C8E454400EDEF5F /* MailgunResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8BDD51C8E454400EDEF5F /* MailgunResult.swift */; };
+		9B446D6F1F8865E300F8CB62 /* CodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B446D6E1F8865E300F8CB62 /* CodableExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +40,6 @@
 		76443AE69A3BD5C797065880 /* Pods-SwiftMailgunTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftMailgunTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftMailgunTests/Pods-SwiftMailgunTests.release.xcconfig"; sourceTree = "<group>"; };
 		83141B051C8E39CD001429A2 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		83141B071C8E3D62001429A2 /* MailgunEmail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailgunEmail.swift; sourceTree = "<group>"; };
-		832E37941C8E31790094ED36 /* ObjectParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectParser.swift; sourceTree = "<group>"; };
 		832E37961C8E31A40094ED36 /* MailgunAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailgunAPI.swift; sourceTree = "<group>"; };
 		832E37991C8E31BF0094ED36 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8344DAE31C8698B400F1B181 /* SwiftMailgun.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftMailgun.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +55,7 @@
 		838287611C8EB2BB00F5D92D /* StringExtensionsSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensionsSpecs.swift; sourceTree = "<group>"; };
 		83A8BDD51C8E454400EDEF5F /* MailgunResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailgunResult.swift; sourceTree = "<group>"; };
 		8FE1960B1CD01F4D68F00309 /* Pods-SwiftMailgunTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftMailgunTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftMailgunTests/Pods-SwiftMailgunTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9B446D6E1F8865E300F8CB62 /* CodableExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableExtensions.swift; sourceTree = "<group>"; };
 		A33C180177BAD754A23303F2 /* Pods_SwiftMailgunTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftMailgunTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE3662AC06A0AF2FEE51D387 /* Pods-SwiftMailgun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftMailgun.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftMailgun/Pods-SwiftMailgun.release.xcconfig"; sourceTree = "<group>"; };
 		B4C2549AD5AE9CB92A4C9474 /* Pods-SwiftMailgun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftMailgun.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftMailgun/Pods-SwiftMailgun.debug.xcconfig"; sourceTree = "<group>"; };
@@ -103,8 +103,8 @@
 		832E37931C8E315B0094ED36 /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				832E37941C8E31790094ED36 /* ObjectParser.swift */,
 				83141B051C8E39CD001429A2 /* StringExtensions.swift */,
+				9B446D6E1F8865E300F8CB62 /* CodableExtensions.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -333,7 +333,6 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftMailgunTests/Pods-SwiftMailgunTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Keys/Keys.framework",
-				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
@@ -341,7 +340,6 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Keys.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
@@ -408,9 +406,9 @@
 				83A8BDD61C8E454400EDEF5F /* MailgunResult.swift in Sources */,
 				83141B081C8E3D62001429A2 /* MailgunEmail.swift in Sources */,
 				832E37971C8E31A40094ED36 /* MailgunAPI.swift in Sources */,
-				832E37951C8E31790094ED36 /* ObjectParser.swift in Sources */,
 				83141B061C8E39CD001429A2 /* StringExtensions.swift in Sources */,
 				832E379A1C8E31BF0094ED36 /* Constants.swift in Sources */,
+				9B446D6F1F8865E300F8CB62 /* CodableExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

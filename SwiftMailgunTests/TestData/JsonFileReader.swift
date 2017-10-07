@@ -18,16 +18,11 @@ open class JSONFileReader {
      
      - returns: Object dic
      */
-    class func JSON(fromFile file: String) -> AnyObject? {
-        let path = Bundle(for: self).path(forResource: file, ofType: "json")
-        
-        if path != nil {
-            if let data = try? Data(contentsOf: URL(fileURLWithPath: path!)) {
-                
-                return try! JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions(rawValue: 0)) as AnyObject?
-            }
+    class func data(fromFileNamed file: String) -> Data? {
+        guard let path = Bundle(for: self).path(forResource: file, ofType: "json") else {
+            return nil
         }
         
-        return .none
+        return try? Data(contentsOf: URL(fileURLWithPath: path))        
     }
 }

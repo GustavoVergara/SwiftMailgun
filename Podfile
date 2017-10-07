@@ -4,7 +4,6 @@ use_frameworks!
 plugin 'cocoapods-keys'
 
 pod 'Alamofire'
-pod 'ObjectMapper'
 
 target 'SwiftMailgun' do
 

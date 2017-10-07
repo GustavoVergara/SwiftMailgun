@@ -7,46 +7,25 @@
 //
 
 import Foundation
-import ObjectMapper
 
 
-open class MailgunEmail : Mappable{
+public struct MailgunEmail: Codable {
     
-    open var from     :String?
-    open var to       :String?
-    open var subject  :String?
-    open var html     :String?
-    open var text     :String?
+    public var from: String?
+    public var to: String?
+    public var subject: String?
+    public var html: String?
+    public var text: String?
+    public var attachment: Data?
     
-    
-    public required init?(map: Map) {}
-    
-    public init(){}
-    
-    public convenience init(to:String, from:String, subject:String, html:String){
-        
-        self.init()
+    public init(to: String? = nil, from: String? = nil, subject: String? = nil, html: String? = nil){
         
         self.to = to
         self.from = from
         self.subject = subject
         self.html = html
-        self.text = html.htmlToString
+        self.text = html?.htmlToString
     
     }
-    
-    /**
-     Mapping functionality for serialization/deserialization
-     
-     - parameter map: <#map description#>
-     */
-    open func mapping(map: Map){
-        to       <- map["to"]
-        from     <- map["from"]
-        subject  <- map["subject"]
-        html     <- map["html"]
-        text     <- map["text"]
-    }
-
     
 }

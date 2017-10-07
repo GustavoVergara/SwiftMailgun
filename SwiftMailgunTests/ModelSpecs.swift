@@ -10,7 +10,6 @@ import Foundation
 
 import Nimble
 import Quick
-import ObjectMapper
 @testable import SwiftMailgun
 
 
@@ -22,7 +21,11 @@ class TestDataModelSpecs: QuickSpec{
         
         it("Decode email result"){
             
-            let emailResult: MailgunResult? = ObjectParser.objectFromJson(JSONFileReader.JSON(fromFile: "mailgun_result"))
+            let json = JSONFileReader.data(fromFileNamed: "mailgun_result")!
+            
+            let emailResult: MailgunResult? = try? JSONDecoder().decode(MailgunResult.self, from: json)
+                
+                //ObjectParser.objectFromJson(JSONFileReader.JSON(fromFile: "mailgun_result"))
             
             expect(emailResult).toNot(beNil())
             expect(emailResult?.message).toNot(beNil())
@@ -33,10 +36,12 @@ class TestDataModelSpecs: QuickSpec{
         
         it("Decode email"){
             
-            let emailObject: MailgunEmail? = ObjectParser.objectFromJson(JSONFileReader.JSON(fromFile: "mailgun_email"))
+            let json = JSONFileReader.data(fromFileNamed: "mailgun_email")!
+            
+            let emailObject: MailgunEmail? = try? JSONDecoder().decode(MailgunEmail.self, from: json)
             
             expect(emailObject).toNot(beNil())
-            expect(emailObject!.from).toNot(beNil())
+            expect(emailObject?.from).toNot(beNil())
             expect(emailObject?.to).toNot(beNil())
             expect(emailObject?.to).to(equal(toEmail))
             

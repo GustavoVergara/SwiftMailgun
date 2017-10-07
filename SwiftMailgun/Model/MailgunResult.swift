@@ -7,23 +7,21 @@
 //
 
 import Foundation
-import ObjectMapper
 
-
-open class MailgunResult: Mappable{
+public struct MailgunResult: Codable {
     
-    open var success: Bool = false
-    open var message: String?
-    open var id: String?
+    public var success: Bool! = false
+    public var message: String?
+    public var id: String?
     
-    open var hasError : Bool{
+    public var hasError : Bool {
         return !success
     }
     
     public init(){}
     
     
-    public convenience init(success:Bool, message:String, id:String?){
+    public init(success: Bool, message: String, id: String?){
         
         self.init()
         self.success = success
@@ -31,15 +29,5 @@ open class MailgunResult: Mappable{
         self.id = id
         
     }
-
-    public required init?(map: Map) {}
-    
-    open func mapping(map: Map) {
-        message  <- map["message"]
-        id       <- map["id"]
-    }
-    
-    
-    
     
 }
