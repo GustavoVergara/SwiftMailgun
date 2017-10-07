@@ -14,12 +14,13 @@ import Quick
 
 
 /// Model specs using fake data.
-class TestDataModelSpecs: QuickSpec{
+class TestDataModelSpecs: QuickSpec {
+    
     override func spec() {
         
         let toEmail = "cjimenez16@gmail.com"
         
-        it("Decode email result"){
+        it("Decode email result") {
             
             let json = JSONFileReader.data(fromFileNamed: "mailgun_result")!
             
@@ -34,7 +35,7 @@ class TestDataModelSpecs: QuickSpec{
         }
         
         
-        it("Decode email"){
+        it("Decode email") {
             
             let json = JSONFileReader.data(fromFileNamed: "mailgun_email")!
             
@@ -49,4 +50,5 @@ class TestDataModelSpecs: QuickSpec{
         }
         
     }
+    
 }

@@ -21,7 +21,7 @@ public struct MailgunResult: Codable {
     public init(){}
     
     
-    public init(success: Bool, message: String, id: String?){
+    public init(success: Bool, message: String, id: String?) {
         
         self.init()
         self.success = success

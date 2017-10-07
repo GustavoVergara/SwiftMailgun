@@ -18,7 +18,7 @@ public struct MailgunEmail: Codable {
     public var text: String?
     public var attachment: Data?
     
-    public init(to: String? = nil, from: String? = nil, subject: String? = nil, html: String? = nil){
+    public init(to: String? = nil, from: String? = nil, subject: String? = nil, html: String? = nil) {
         
         self.to = to
         self.from = from

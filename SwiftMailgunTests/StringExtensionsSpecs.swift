@@ -13,7 +13,7 @@ import Quick
 import SwiftMailgun
 @testable import SwiftMailgun
 
-open class StringExtensionsSpecs: QuickSpec{
+open class StringExtensionsSpecs: QuickSpec {
     
     override open func spec() {
         
@@ -37,8 +37,5 @@ open class StringExtensionsSpecs: QuickSpec{
         }
         
     }
-    
-    
-    
     
 }

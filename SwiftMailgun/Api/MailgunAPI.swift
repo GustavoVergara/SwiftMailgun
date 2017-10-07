@@ -137,4 +137,3 @@ open class MailgunAPI {
     }
     
 }
-

@@ -13,8 +13,7 @@ import Quick
 import Keys
 @testable import SwiftMailgun
 
-class MailgunApiSpecs: QuickSpec{
-    
+class MailgunApiSpecs: QuickSpec {
     
     override func spec() {
         
@@ -60,4 +59,3 @@ class MailgunApiSpecs: QuickSpec{
     }
 
 }
-
